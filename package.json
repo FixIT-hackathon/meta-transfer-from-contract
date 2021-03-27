@@ -1,0 +1,22 @@
+{
+  "name": "meta-transfer-from-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FixIT-hackathon/meta-transfer-from-contract.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FixIT-hackathon/meta-transfer-from-contract/issues"
+  },
+  "homepage": "https://github.com/FixIT-hackathon/meta-transfer-from-contract#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0"
+  }
+}
