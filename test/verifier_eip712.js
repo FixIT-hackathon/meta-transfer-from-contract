@@ -46,7 +46,7 @@ contract("RelayerEIP712", function (accounts) {
         assert.notEqual(addr, undefined)
     });
 
-    it("should ", async () => {
+    it("should transfer", async () => {
         await token.approve(verifier.address, 1010, {
             from: SENDER
         })

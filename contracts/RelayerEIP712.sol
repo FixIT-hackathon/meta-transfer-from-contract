@@ -37,10 +37,9 @@ contract RelayerEIP712 is Ownable {
 
             signer = ecrecover(digest, v, r, s);
             require(signer != address(0), "RelayerEIP712: bad signature");
-            require(nonce == nonces[signer], "RelayerEIP712: problem with signer nonce");
+            require(nonce == nonces[signer]++, "RelayerEIP712: problem with signer nonce");
         }
 
-        nonces[signer] += 1;
         IERC20 ierc20 = IERC20(erc20);
 
         uint256 sum = amount.add(fee);
